@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Navigator from "./components/Navigator";
 import "./globals.css";
+import "./layout.css"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,7 +26,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
-      <body>{children}</body>
+      <body>
+        <div className="MainContainer">
+            <div className="TitleContainer">
+              <h1>Rick y Morty </h1>
+              <Navigator/>  
+              {children} 
+            </div>
+        </div>
+      </body>
     </html>
-  );
+  );  
 }

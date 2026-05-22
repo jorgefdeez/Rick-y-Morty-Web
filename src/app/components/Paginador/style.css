@@ -1,0 +1,10 @@
+.paginadorContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.paginadorContainer button{
+    display: felx;
+    color: black
+}

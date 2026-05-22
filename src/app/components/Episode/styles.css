@@ -1,0 +1,14 @@
+.EpisodeContainer{
+    display: felx;
+}
+
+.botonEpisodio{
+    background-color: verde;
+    color: black;
+    cursor: pointer;
+}
+
+.botonEpisodio:hover{
+    background-color:aquamarine;
+    color:black
+}
