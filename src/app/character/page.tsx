@@ -34,7 +34,7 @@ const CharacterPage = () => {
     }
 
     return (
-        <div className="characterContainer">
+        <div>
             {characteresss?.results.map((e) => (
                 <CharacterComponente key={e.id} personaje={e} />
                 

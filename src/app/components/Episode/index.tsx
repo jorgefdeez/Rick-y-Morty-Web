@@ -4,7 +4,6 @@ import{Episode} from "@/app/types/type"
 import{useRouter} from "next/navigation"
 
 const EpisodeComponente = ({epi}:{epi:Episode}) =>{
-    const router = useRouter()
 
     return(
         <div className="EpisodeContainer">

@@ -1,4 +1,4 @@
-.EpisodeContainer{
+.EpisodiossssContainer{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,10 +9,3 @@
     border-radius: 15px;
 }
 
-.EpisodiosContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 30px
-}

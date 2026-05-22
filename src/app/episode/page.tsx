@@ -6,6 +6,7 @@ import api from  "@/api/axios"
 import EpisodeComponente from "../components/Episode"
 import Paginador from "../components/Paginador"
 import { useRouter } from "next/navigation";
+import "../components/Episode/styles.css"
 
 const EpisodePage=()=>{
     const[episodeData, setEpisode] = useState<ResultsEpisodes|null>(null)
@@ -32,7 +33,7 @@ const EpisodePage=()=>{
 
 
     return(
-        <div className ="MainContainer">
+        <div className ="EpisodiosContainer">
             {loading && <p>loading...</p>}
 
             {episodeData?.results.map((e)=>{
