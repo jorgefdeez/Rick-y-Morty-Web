@@ -1,12 +1,13 @@
 .EpisodeContainer{
     display: flex;
+    padding: 40px 100px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 30px;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 40px 100px;
-    border-radius: 15px;
+    margin-top: 50px;
+    gap: 25px
 }
 
 .EpisodiosContainer{
@@ -15,4 +16,16 @@
     align-items: center;
     flex-direction: column;
     gap: 30px
+}
+
+.botonFavorito{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:chartreuse;
+    cursor: pointer
+}
+.botonFavorito:hover {
+    background-color: rgb(40, 193, 204);
+    color: black ;
 }

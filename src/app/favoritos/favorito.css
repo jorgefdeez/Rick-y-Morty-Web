@@ -1,0 +1,15 @@
+.botonEliminar{
+    background-color:chartreuse;
+    cursor: pointer
+}
+.botonEliminar:hover {
+    background-color: rgb(40, 193, 204);
+    color: black ;
+}
+
+.containerFavoritos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

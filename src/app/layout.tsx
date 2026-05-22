@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Navigator from "./components/Navigator";
 import "./globals.css";
 import "./layout.css"
+import { ListProvider } from "@/context/Provider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,13 +28,15 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body>
+        <ListProvider>
         <div className="MainContainer">
             <div className="TitleContainer">
-              <h1>Rick y Morty </h1>
+              <h1>Rick y Morty Web</h1>
               <Navigator/>  
-              {children} 
+                {children} 
             </div>
         </div>
+        </ListProvider>
       </body>
     </html>
   );  

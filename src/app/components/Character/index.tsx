@@ -8,8 +8,8 @@ const CharacterComponente =({personaje}:{personaje: CharacterS}) =>{
     return(
         <div className="characterComponent">
             <h1>{personaje.name}</h1>
-            <p>{personaje.status}</p>
-            <p>{personaje.species}</p>
+            <p className="personaje">{personaje.status}</p>
+            <p className="personaje">{personaje.species}</p>
             <img src={personaje.image} alt={personaje.name}></img>
              <button
                 className="boton"

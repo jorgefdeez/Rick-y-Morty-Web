@@ -4,7 +4,6 @@ import type { CharacterS } from "@/app/types/type";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
-import Paginador from "@/app/components/Paginador"
 import "./detalle.css"
 
 const getPersonajeById=()=>{

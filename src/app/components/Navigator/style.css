@@ -8,10 +8,10 @@
 
 .botones{
     text-decoration: none;
-    color: rgb(255, 255, 255)
-    
+    color: rgb(255, 255, 255);
+    cursor: pointer
 }
 
 .botones:hover{
-    background-color: rgb(0, 0, 0);
+    color:blue
 }

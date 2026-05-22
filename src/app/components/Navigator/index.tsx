@@ -22,8 +22,8 @@ const Navigator=()=>{
             rutas: "/episode"
         },
         {
-            name : "Navigator",
-            rutas: "/Navigator"
+            name : "favoritos",
+            rutas: "/favoritos"
         }
     ]
     

@@ -7,6 +7,7 @@ import EpisodeComponente from "../components/Episode"
 import Paginador from "../components/Paginador"
 import { useRouter } from "next/navigation";
 import "../components/Episode/styles.css"
+import {useLista} from "@/context/Provider"
 
 const EpisodePage=()=>{
     const[episodeData, setEpisode] = useState<ResultsEpisodes|null>(null)
@@ -14,6 +15,8 @@ const EpisodePage=()=>{
     const[loading, setLoading] = useState<boolean>(true)
    
     const router = useRouter()
+
+    const{addToList} = useLista()
 
     const getEpisode = async() =>{
         try{
@@ -38,8 +41,19 @@ const EpisodePage=()=>{
 
             {episodeData?.results.map((e)=>{
                 return(
+                    <div key={e.id}>
                     <EpisodeComponente key={e.id} epi={e}></EpisodeComponente>
+                        <button 
+                            className="botonFavorito"
+                            onClick={()=>{
+                                addToList(e)
+                            }}
+                        >
+                        Añadir Favortios
+                        </button>
+                    </div>
                 )
+                
             })}
 
             <Paginador

@@ -1,17 +1,16 @@
 'use client'
 
 import{Episode} from "@/app/types/type"
-import{useRouter} from "next/navigation"
 
 const EpisodeComponente = ({epi}:{epi:Episode}) =>{
 
     return(
         <div className="EpisodeContainer">
-            <p>Nombre: {epi.name}</p>
+            <h1>{epi.name}</h1>
             <p>ID: {epi.id}</p>
             <p>Fecha: {epi.air_date}</p>
             <p>URL: {epi.url}</p>
-            <p>Personajes que aparecen: </p>
+            <h2>Personajes que aparecen: </h2>
             {epi?.characters.map((e)=>{
                 return(
                     <p key ={e} className="caracteres">{e}</p>
