@@ -1,0 +1,33 @@
+.LocalizacionContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 100px;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.5);
+    gap: 10px;
+    border-radius: 15px;
+    margin-top: 50px;
+}
+
+.boton{
+    background-color:chartreuse;
+    color: black;
+    cursor: pointer;
+}
+
+.boton:hover{
+    background-color: aquamarine;
+    color:black
+}
+
+.LocationDetalleContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.5);
+    padding: 40px;
+    border-radius: 15px;
+    gap: 20px;
+}
